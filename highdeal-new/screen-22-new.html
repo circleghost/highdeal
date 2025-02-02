@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="海定科技提供多款 22 吋螢幕租賃服務，包括 Philips 221V8A、223V5LHSW、Samsung B2230N 等型號，提供專業的租賃服務。">
+    <meta name="keywords" content="22吋螢幕租賃,Philips 221V8A,Philips 223V5LHSW,Samsung B2230N,螢幕出租">
+    <title>海定科技有限公司 - 22吋螢幕租賃</title>
+    
+    <!-- HTMX -->
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/category.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    
+    <!-- JavaScript -->
+    <script src="js/main.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/header.js" defer></script>
+    <script src="js/footer.js" defer></script>
+</head>
+<body>
+    <!-- 頁首 -->
+    <div hx-get="header-template-new.html" hx-trigger="load" hx-swap="outerHTML">
+        <div class="loading-placeholder">載入中...</div>
+    </div>
+
+    <!-- 主要內容 -->
+    <main class="container">
+        <!-- 麵包屑導航 -->
+        <nav class="breadcrumb" aria-label="麵包屑導航">
+            <ul>
+                <li><a href="/">首頁</a></li>
+                <li><a href="screen-new.html">螢幕租賃</a></li>
+                <li><span aria-current="page">22吋螢幕</span></li>
+            </ul>
+        </nav>
+
+        <!-- 頁面標題 -->
+        <div class="page-header">
+            <h1>22吋螢幕租賃服務</h1>
+        </div>
+
+        <!-- 螢幕尺寸快速導航 -->
+        <nav class="screen-nav">
+            <ul>
+                <li><a href="screen-19-new.html">19吋</a></li>
+                <li><a href="screen-22-new.html" class="active">22吋</a></li>
+                <li><a href="screen-23-new.html">23吋</a></li>
+                <li><a href="screen-24-new.html">24吋</a></li>
+                <li><a href="screen-27-new.html">27吋</a></li>
+                <li><a href="screen-28-new.html">28吋</a></li>
+            </ul>
+        </nav>
+
+        <!-- 推薦文案 -->
+        <div class="highlight-text">
+            <h2>專業展覽首選機種</h2>
+            <p>展場、活動、研討會的最佳夥伴，統一的外觀設計，專業的品質呈現，讓您的展示更加出色。</p>
+        </div>
+
+        <!-- 產品列表 -->
+        <div class="product-grid">
+            <!-- Philips 221V8A -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="graphic/Screen/22/Philips-221V8A.gif" alt="Philips 221V8A">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Philips 221V8A</h3>
+                    <div class="product-specs">
+                        <ul>
+                            <li><span aria-current="page">螢幕保護：防眩光處理</span></li>
+                            <li><span aria-current="page">視訊輸入：D-Sub (VGA) / HDMI</span></li>
+                            <li><span aria-current="page">反應時間：4ms (GTG)</span></li>
+                            <li><span aria-current="page">解析度：1920 x 1080</span></li>
+                        </ul>
+                    </div>
+                    <div class="rental-info">
+                        <a href="screen-22-Philips221V8A-new.html" class="spec-button">查看詳細規格</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Philips 223V5LHSW -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="graphic/Screen/22/Philips223V5LHSW.jpg" alt="Philips 223V5LHSW">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Philips 223V5LHSW</h3>
+                    <div class="product-specs">
+                        <ul>
+                            <li><span aria-current="page">螢幕保護：防眩光處理</span></li>
+                            <li><span aria-current="page">視訊輸入：D-Sub (VGA) / HDMI</span></li>
+                            <li><span aria-current="page">反應時間：5ms (GTG)</span></li>
+                            <li><span aria-current="page">解析度：1920 x 1080</span></li>
+                        </ul>
+                    </div>
+                    <div class="rental-info">
+                        <a href="screen-22-223v5lhsw-new.html" class="spec-button">查看詳細規格</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Samsung B2230N -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="graphic/Screen/22/SamSung_B2230N.gif" alt="Samsung B2230N">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Samsung B2230N (白色)</h3>
+                    <div class="product-specs">
+                        <ul>
+                            <li><span aria-current="page">螢幕保護：防眩光處理</span></li>
+                            <li><span aria-current="page">視訊輸入：D-Sub (VGA)</span></li>
+                            <li><span aria-current="page">反應時間：5ms (GTG)</span></li>
+                            <li><span aria-current="page">解析度：1920 x 1080</span></li>
+                        </ul>
+                    </div>
+                    <div class="rental-info">
+                        <a href="screen-22-b2230n-new.html" class="spec-button">查看詳細規格</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 租賃說明 -->
+        <div class="rental-notice">
+            <h2>租賃說明</h2>
+            <ul>
+                <li><span aria-current="page">最短租期為1天，長期租賃另有優惠方案</span></li>
+                <li><span aria-current="page">提供免費運送及安裝服務（限大台北地區）</span></li>
+                <li><span aria-current="page">所有設備均經過專業檢測，確保品質</span></li>
+                <li><span aria-current="page">提供技術支援及維修服務</span></li>
+            </ul>
+            <p>如需詳細租賃資訊，請撥打服務專線：(02)2758-6526</p>
+        </div>
+    </main>
+
+    <!-- 頁尾 -->
+    <div hx-get="footer-template-new.html" hx-trigger="load" hx-swap="outerHTML">
+        <div class="loading-placeholder">載入中...</div>
+    </div>
+</body>
+</html> 

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="海定科技提供商務艙等級筆記型電腦租賃服務，包含 Dynabook、Lenovo 等品牌筆電，提供企業與個人最專業的電腦租賃服務。">
+    <title>商務艙筆記型電腦出租 - 海定租筆電/租電腦</title>
+    
+    <!-- HTMX -->
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/category.css">
+    
+    <style>
+    .product-card .os-info {
+        background: #f0f7ff;
+        color: #0078d4;
+        padding: 8px 15px;
+        border-radius: 4px;
+        margin: 0 0 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.95em;
+        font-weight: 500;
+        border: 1px solid #cce4ff;
+        transition: all 0.2s ease;
+        width: 100%;
+        text-align: center;
+    }
+
+    .product-card .os-info i {
+        color: #0078d4;
+        margin-bottom: 4px;
+        font-size: 1.2em;
+    }
+
+    .product-card .os-info span {
+        margin: 4px 0;
+        font-weight: 600;
+    }
+
+    .product-card .os-info .size-info {
+        color: #666;
+        font-size: 0.9em;
+        margin: 0;
+        font-weight: normal;
+    }
+
+    .product-card .os-info:hover {
+        background: #e6f2ff;
+        border-color: #99ceff;
+    }
+
+    .product-card .product-specs {
+        padding: 0 15px;
+        margin-top: 15px;
+    }
+
+    .product-card .product-specs ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card .product-specs li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 12px;
+        color: #333;
+        font-size: 18px;
+        line-height: 1.6;
+        width: 100%;
+        text-align: center;
+        position: relative;
+        padding-left: 15px;
+    }
+
+    .product-card .product-specs li:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 6px;
+        height: 6px;
+        background-color: #e60012;
+        border-radius: 50%;
+    }
+
+    @media (max-width: 768px) {
+        .product-card .product-specs li {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .product-card .product-specs li {
+            font-size: 15px;
+            margin-bottom: 8px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <!-- 頁首 -->
+    <header hx-get="header-template-new.html" hx-trigger="load" hx-swap="outerHTML">
+        <div class="loading-placeholder">載入中...</div>
+    </header>
+
+    <main class="container">
+        <!-- 麵包屑導航 -->
+        <nav class="breadcrumb" aria-label="麵包屑導航" aria-label="麵包屑導航">
+            <ul>
+                <li><a href="/">首頁</a></li>
+                <li><a href="laptop-new.html">筆記型電腦出租</a></li>
+                <li><span aria-current="page">商務艙</span></li>
+            </ul>
+        </nav>
+
+        <div class="page-header">
+            <h1>筆記型電腦出租 - 商務艙</h1>
+            <div class="page-description">
+                我們的商務艙筆記型電腦系列提供優質的商務體驗，搭載高效能處理器與獨立顯示卡，適合商務人士、企業用戶及需要高效能的專業人士使用。
+            </div>
+        </div>
+
+        <div class="screen-nav">
+            <ul>
+                <li><a href="laptop-advanced-new.html">頭等艙</a></li>
+                <li><a href="laptop-intermediate-new.html" class="active">商務艙</a></li>
+                <li><a href="laptop-basic-new.html">經濟艙</a></li>
+            </ul>
+        </div>
+
+        <!-- 產品網格 -->
+        <div class="product-grid">
+            <!-- Dynabook CS40L-HB -->
+            <div class="product-card">
+                <div class="product-info">
+                    <div class="product-image">
+                        <img src="graphic/Laptop/Dynabook-CS40L-HB.gif" alt="Dynabook CS40L-HB">
+                    </div>
+                    <h2 class="product-title">Dynabook CS40L-HB</h2>
+                    <div class="os-info">
+                        <i class="fa-brands fa-windows"></i>
+                        <span>Windows 10 Pro</span>
+                        <p class="size-info">64bit</p>
+                    </div>
+                    <div class="product-specs">
+                        <ul>
+                            <li><span aria-current="page">Intel Core i5 1035G1</span></li>
+                            <li><span aria-current="page">(1.0Ghz，up to 3.6Ghz)</span></li>
+                            <li><span aria-current="page">512GB SSD HDD</span></li>
+                            <li><span aria-current="page">8GB DDR4 (RAM)</span></li>
+                            <li><span aria-current="page">IntelR UHD 顯示卡</span></li>
+                            <li><span aria-current="page">IntelR Wi-Fi 6</span></li>
+                            <li><span aria-current="page">內建攝影機</span></li>
+                            <li><span aria-current="page">USB 3.1 Type-C*1+USB3.0*2 / HDMI*1</span></li>
+                            <li><span aria-current="page">14"IPS面板(1920 *1080)</span></li>
+                            <li><span aria-current="page">1.48kg</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lenovo L340 -->
+            <div class="product-card">
+                <div class="product-info">
+                    <div class="product-image">
+                        <img src="graphic/Laptop/Ideapad_L340.gif" alt="Lenovo L340">
+                    </div>
+                    <h2 class="product-title">Lenovo L340</h2>
+                    <div class="os-info">
+                        <i class="fa-brands fa-windows"></i>
+                        <span>Windows 10 Pro</span>
+                        <p class="size-info">64bit</p>
+                    </div>
+                    <div class="product-specs">
+                        <ul>
+                            <li><span aria-current="page">Intel Core i5 9300HF 2.4GHz</span></li>
+                            <li><span aria-current="page">512GB SSD HDD M.2</span></li>
+                            <li><span aria-current="page">16GB DDR4 (RAM)</span></li>
+                            <li><span aria-current="page">NVIDIA GeForce GTX1650</span></li>
+                            <li><span aria-current="page">獨顯4G DDR5</span></li>
+                            <li><span aria-current="page">無光碟機</span></li>
+                            <li><span aria-current="page">內建攝影機</span></li>
+                            <li><span aria-current="page">USB 3.1 Type-C*1 + USB3.1*2 / HDMI 2.0</span></li>
+                            <li><span aria-current="page">15.6"IPS面板 (1920 *1080)</span></li>
+                            <li><span aria-current="page">2.2kg</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lenovo Ideapad 330 -->
+            <div class="product-card">
+                <div class="product-info">
+                    <div class="product-image">
+                        <img src="graphic/Laptop/Lenovo-Ideapad-330-15IKB.jpg" alt="Lenovo Ideapad 330">
+                    </div>
+                    <h2 class="product-title">Lenovo Ideapad 330</h2>
+                    <div class="os-info">
+                        <i class="fa-brands fa-windows"></i>
+                        <span>Windows 10 Pro</span>
+                        <p class="size-info">64bit</p>
+                    </div>
+                    <div class="product-specs">
+                        <ul>
+                            <li><span aria-current="page">Intel Core i7 8550U 1.8GHz</span></li>
+                            <li><span aria-current="page">256GB SSD HDD (M.2)</span></li>
+                            <li><span aria-current="page">16GB DDR4 (RAM)</span></li>
+                            <li><span aria-current="page">AMD Radeon 530 獨顯4G DDR5</span></li>
+                            <li><span aria-current="page">無光碟機</span></li>
+                            <li><span aria-current="page">內建攝影機</span></li>
+                            <li><span aria-current="page">USB 3.1 Type-C*1 + USB 3.1*2 / HDMI</span></li>
+                            <li><span aria-current="page">15.6"LED寬螢幕(1920 *1080)</span></li>
+                            <li><span aria-current="page">2kg</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 租賃說明 -->
+        <section class="rental-notice">
+            <h2>租賃說明</h2>
+            <ul>
+                <li><span aria-current="page">營業時間：週一至週五 上午10:00 ~ 下午05:00</span></li>
+                <li><span aria-current="page">週六及國訂假日公休</span></li>
+                <li><span aria-current="page">連絡地址：台北市忠孝東路5段165巷3弄30號1樓</span></li>
+                <li><span aria-current="page">TEL：02-2762-6333</span></li>
+                <li><span aria-current="page">FAX：02-2762-9333</span></li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- 頁尾 -->
+    <footer hx-get="footer-template-new.html" hx-trigger="load" hx-swap="outerHTML">
+        <div class="loading-placeholder">載入中...</div>
+    </footer>
+</body>
+</html> 

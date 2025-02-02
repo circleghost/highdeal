@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="海定科技提供 Apple 產品租賃服務，包括 MacBook Pro、iPad Pro、iPad 等多種產品，提供專業的租賃服務。">
+    <meta name="keywords" content="Apple租賃,MacBook租賃,iPad租賃,平板電腦租賃">
+    <title>海定科技有限公司 - Apple 產品租賃</title>
+    
+    <!-- CSS -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/category.css">
+    
+    <!-- HTMX -->
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+</head>
+<body>
+    <!-- 載入 Header -->
+    <header hx-get="header-template-new.html" hx-trigger="load" hx-swap="outerHTML">
+        <div class="loading-placeholder">載入中...</div>
+    </header>
+
+    <main class="container">
+        <!-- 麵包屑導航 -->
+        <nav class="breadcrumb" aria-label="麵包屑導航" aria-label="麵包屑導航">
+            <ul>
+                <li><a href="/">首頁</a></li>
+                <li><span aria-current="page">Apple 產品</span></li>
+            </ul>
+        </nav>
+
+        <!-- 頁面標題 -->
+        <div class="page-header">
+            <h1>Apple 產品租賃</h1>
+            <div class="page-description">
+                提供各式 Apple 產品租賃服務，包括 MacBook Pro、iPad Pro、iPad 等多種產品，滿足您的各種需求。
+            </div>
+        </div>
+
+        <!-- 產品網格 -->
+        <div class="product-grid">
+            <!-- MacBook Pro -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="graphic/Apple/MacBook-Pro-15.jpg" alt="Apple MacBook Pro 15吋">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-title">Apple MacBook Pro 15吋 (銀色)</h2>
+                    <div class="product-specs">
+                        <ul>
+                            <li><span aria-current="page">Intel Core i7 四代 2.8GHz</span></li>
+                            <li><span aria-current="page">256GB (SSD HDD)</span></li>
+                            <li><span aria-current="page">16GB LPDDR3(RAM)</span></li>
+                            <li><span aria-current="page">Radeon Pro 555 2G</span></li>
+                            <li><span aria-current="page">無光碟機</span></li>
+                            <li><span aria-current="page">內建攝影機</span></li>
+                            <li><span aria-current="page">四個 Thunderbolt 3 埠</span></li>
+                            <li><span aria-current="page">15.4"LED寬螢幕(1920 *1200)</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- iPad Pro -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="graphic/Apple/iPad-Pro-64GB.jpg" alt="iPad Pro 64GB">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-title">iPad Pro 64GB WiFi版 (銀色)</h2>
+                    <div class="product-specs">
+                        <ul>
+                            <li><span aria-current="page">螢幕尺寸：12.9吋</span></li>
+                            <li><span aria-current="page">解析度：2732 *2048</span></li>
+                            <li><span aria-current="page">無線網路：WiFi</span></li>
+                            <li><span aria-current="page">重量：677g</span></li>
+                        </ul>
+                    </div>
+                    <div class="rental-info">
+                        <a href="apple-iPad-Pro-64GB-new.html" class="spec-button">查看詳細規格 →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- iPad -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="graphic/Apple/iPad-64GB.jpg" alt="iPad 64GB">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-title">iPad 64GB WiFi版 平板電腦</h2>
+                    <div class="product-specs">
+                        <ul>
+                            <li><span aria-current="page">螢幕尺寸：10.2吋</span></li>
+                            <li><span aria-current="page">解析度：2160 *1620</span></li>
+                            <li><span aria-current="page">無線網路：WiFi</span></li>
+                            <li><span aria-current="page">重量：487g</span></li>
+                        </ul>
+                    </div>
+                    <div class="rental-info">
+                        <a href="apple-iPad-64GB-new.html" class="spec-button">查看詳細規格 →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 租賃說明 -->
+        <section class="rental-notice">
+            <h2>租賃說明</h2>
+            <ul>
+                <li><span aria-current="page">營業時間：週一至週五 上午10:00 ~ 下午05:00</span></li>
+                <li><span aria-current="page">週六及國定假日公休</span></li>
+                <li><span aria-current="page">地址：台北市忠孝東路5段165巷3弄30號1樓</span></li>
+                <li><span aria-current="page">電話：02-2762-6333</span></li>
+                <li><span aria-current="page">傳真：02-2762-9333</span></li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- 載入 Footer -->
+    <footer hx-get="footer-template-new.html" hx-trigger="load" hx-swap="outerHTML">
+        <div class="loading-placeholder">載入中...</div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html> 

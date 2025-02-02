@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <!-- 引入 head 模板 -->
+    <div hx-get="head-template-new.html" hx-trigger="load" hx-swap="outerHTML"></div>
+    <title>海定科技 - 租電腦、租筆電</title>
+</head>
+<body>
+    <!-- 頁首 -->
+    <div hx-get="header-template-new.html" hx-trigger="load" hx-swap="outerHTML">
+        <div class="loading-placeholder">載入中...</div>
+    </div>
+
+    <!-- 頁面主要內容 -->
+    <main class="main-content">
+        <!-- 在這裡放置頁面特定的內容 -->
+    </main>
+
+    <!-- 頁尾 -->
+    <div hx-get="footer-template-new.html" hx-trigger="load" hx-swap="outerHTML">
+        <div class="loading-placeholder">載入中...</div>
+    </div>
+
+    <!-- 頁面特定的 JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof initializeMenu === 'function') {
+                initializeMenu();
+            }
+        });
+    </script>
+</body>
+</html> 
