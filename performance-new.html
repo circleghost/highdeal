@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="海定科技公司的業務實績，包含各大展覽、會議、活動等租電腦、租筆電的成功案例。">
+    <meta name="keywords" content="租電腦實績,租筆電實績,電腦租賃案例">
+    <title>業務實績 | 海定科技公司</title>
+    
+    <!-- HTMX -->
+    <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    
+    <!-- JavaScript -->
+    <script src="js/main.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/header.js" defer></script>
+    <script src="js/footer.js" defer></script>
+
+    <style>
+    /* 主要內容區域樣式 */
+    .site-main {
+        padding: 20px 0;
+    }
+
+    .container {
+        max-width: 940px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    /* 業務實績內容樣式 */
+    .performance-content {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        padding: 30px;
+        margin-bottom: 30px;
+    }
+
+    .page-title {
+        color: #333;
+        font-size: 24px;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #e60012;
+    }
+
+    .performance-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .performance-item {
+        padding: 15px 0;
+        border-bottom: 1px solid #eee;
+    }
+
+    .performance-item:last-child {
+        border-bottom: none;
+    }
+
+    .performance-item h3 {
+        color: #e60012;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .performance-item p {
+        color: #666;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    @media screen and (max-width: 768px) {
+        .performance-content {
+            padding: 20px;
+        }
+
+        .page-title {
+            font-size: 20px;
+        }
+
+        .performance-item h3 {
+            font-size: 16px;
+        }
+    }
+
+    .performance-region {
+        margin-bottom: 40px;
+    }
+    
+    .performance-region h2 {
+        color: #e60012;
+        font-size: 24px;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #e60012;
+    }
+    
+    .performance-columns {
+        display: flex;
+        gap: 40px;
+    }
+    
+    .performance-columns .performance-list {
+        flex: 1;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    .performance-columns .performance-list li {
+        position: relative;
+        padding-left: 20px;
+        margin-bottom: 10px;
+        line-height: 1.5;
+    }
+    
+    .performance-columns .performance-list li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 8px;
+        width: 8px;
+        height: 8px;
+        background-color: #666;
+        border-radius: 50%;
+    }
+    
+    @media (max-width: 768px) {
+        .performance-columns {
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .performance-region h2 {
+            font-size: 20px;
+        }
+    }
+
+    .performance-banner {
+        margin-bottom: 30px;
+    }
+
+    .performance-banner img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .performance-intro {
+        margin-bottom: 30px;
+    }
+    </style>
+</head>
+<body>
+    <!-- 頁首 -->
+    <div hx-get="header-template-new.html" hx-trigger="load" hx-swap="outerHTML">
+        <div class="loading-placeholder">載入中...</div>
+    </div>
+
+    <!-- 主要內容 -->
+    <main class="site-main">
+        <div class="container">
+            <section class="performance-content">
+                <h1 class="page-title">業務實績</h1>
+                <div class="performance-banner">
+                    <img src="image/sales_banner.jpg" alt="海定科技業務實績" width="740" height="129">
+                </div>
+                <div class="performance-intro">
+                    <p>海定科技擁有豐富大小型展覽及會議經驗，亦承接政府、各種企業專案，具備整體性服務規劃與專業完善的執行力，服務區域遍及全台灣。</p>
+                </div>
+
+                <div class="performance-region">
+                    <h2>北區</h2>
+                    <div class="performance-columns">
+                        <ul class="performance-list">
+                            <li>國際半導體展</li>
+                            <li>台灣國際生物科技大展</li>
+                            <li>台北多媒體大展</li>
+                            <li>新一代設計展</li>
+                            <li>全國中等學校運動會</li>
+                            <li>亞太心臟學會</li>
+                            <li>台北國際書展</li>
+                            <li>資訊月電腦展</li>
+                            <li>台北國際旅展</li>
+                            <li>數位行銷高峰會</li>
+                            <li>亞洲血管外科年會</li>
+                            <li>台灣文創意產業博覽會</li>
+                            <li>APEC糧食安全論壇</li>
+                            <li>全球科技高峰論壇</li>
+                            <li>中華民國眼科醫學會年會</li>
+                            <li>INTEL嵌入式產業應用論壇</li>
+                            <li>亞太事務青年培訓營</li>
+                            <li>APEC業務研習營</li>
+                            <li>世界模擬聯合國會議</li>
+                            <li>APEC中小企業因應全球金融危機研討會</li>
+                            <li>亞洲心臟血管暨胸腔外科學會年會</li>
+                        </ul>
+                        <ul class="performance-list">
+                            <li>台北國際自動化工業大展</li>
+                            <li>網路創意展</li>
+                            <li>台北國際電腦展COMPUTEX</li>
+                            <li>台灣兒科醫學會</li>
+                            <li>台北國際安全博覽會</li>
+                            <li>Intel應用論壇</li>
+                            <li>台北車展</li>
+                            <li>國際輸血協會年會</li>
+                            <li>亞太高血壓學術會議</li>
+                            <li>台灣國際太陽能光電論壇暨展覽會</li>
+                            <li>建國百年經建特展活動</li>
+                            <li>APEC中小企業研討會</li>
+                            <li>國際扶輪地區年會</li>
+                            <li>台北國際工具機展覽</li>
+                            <li>亞太骨科醫學大會</li>
+                            <li>APEC提升經商便利度國際研討會</li>
+                            <li>APEC中小企業危機管理研習營</li>
+                            <li>亞太營聯會國際年會</li>
+                            <li>APEC中小企業工作小組會議</li>
+                            <li>IBM論壇</li>
+                            <li>亞洲電化學科學研討會</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="performance-region">
+                    <h2>中區</h2>
+                    <div class="performance-columns">
+                        <ul class="performance-list">
+                            <li>台中國際旅展</li>
+                            <li>中區資訊展</li>
+                            <li>台中素食養生展</li>
+                            <li>台中春季電腦多媒體展</li>
+                            <li>資訊月（台中場）</li>
+                            <li>中區春季電腦多媒體大展</li>
+                        </ul>
+                        <ul class="performance-list">
+                            <li>第8次全國教育會議 (台中場)</li>
+                            <li>第三屆泛太平洋國際幹細胞研討會</li>
+                            <li>台中國際旅展</li>
+                            <li>中區資訊展</li>
+                            <li>C06 台灣前衛文件展</li>
+                            <li>數位台灣成果展</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="performance-region">
+                    <h2>南區</h2>
+                    <div class="performance-columns">
+                        <ul class="performance-list">
+                            <li>台灣國際扣件展覽會</li>
+                            <li>斗六心臟超音波進階課程及心肌型變造影研討會</li>
+                            <li>建國百年 經建特展活動 (高雄場)</li>
+                            <li>高雄市電腦展</li>
+                            <li>格蘭傑Whisky 101挑戰賽-台南場</li>
+                            <li>APEC 登革熱防治實務工作研討會</li>
+                            <li>資訊月 (台南場)</li>
+                            <li>高雄資訊月</li>
+                        </ul>
+                        <ul class="performance-list">
+                            <li>高雄市電腦展</li>
+                            <li>42nd APEC Energy Working Group and Associated Meetings</li>
+                            <li>第8次全國教育會議 (高雄場)</li>
+                            <li>高雄國際旅展</li>
+                            <li>APEC 中小企業工作小組系列會議</li>
+                            <li>香港.高雄服務業合作會議</li>
+                            <li>高雄市電腦展</li>
+                            <li>ICF 世界龍舟錦標賽</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="performance-region">
+                    <h2>宜花東區</h2>
+                    <div class="performance-columns">
+                        <ul class="performance-list">
+                            <li>建國百年 經建特展活動 (花蓮場)</li>
+                            <li>第8次全國教育會議 (台東場)</li>
+                        </ul>
+                        <ul class="performance-list">
+                            <li>經濟部東區廠商徵才博覽會</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- 頁尾 -->
+    <div hx-get="footer-template-new.html" hx-trigger="load" hx-swap="outerHTML">
+        <div class="loading-placeholder">載入中...</div>
+    </div>
+</body>
+</html> 

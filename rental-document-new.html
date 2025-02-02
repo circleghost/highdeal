@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="海定科技公司的電腦租賃所需文件說明，包含租電腦、租筆電時需要準備的證件與資料。">
+    <meta name="keywords" content="租電腦文件,租筆電文件,電腦租賃證件">
+    <title>電腦租賃文件 | 海定科技公司</title>
+    
+    <!-- HTMX -->
+    <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    
+    <!-- JavaScript -->
+    <script src="js/main.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/header.js" defer></script>
+    <script src="js/footer.js" defer></script>
+
+    <style>
+    /* 主要內容區域樣式 */
+    .site-main {
+        padding: 20px 0;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .container {
+        max-width: 940px;
+        margin: 0 auto;
+        padding: 0 15px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* 租賃文件內容樣式 */
+    .document-content {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        padding: 30px;
+        margin-bottom: 30px;
+    }
+
+    .page-title {
+        color: #333;
+        font-size: 24px;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #e60012;
+    }
+
+    .document-section {
+        margin-bottom: 30px;
+    }
+
+    .document-section:last-child {
+        margin-bottom: 0;
+    }
+
+    .document-section h2 {
+        color: #e60012;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .document-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .document-item {
+        position: relative;
+        padding: 10px 0 10px 20px;
+        color: #666;
+        line-height: 1.6;
+    }
+
+    .document-item::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 18px;
+        width: 6px;
+        height: 6px;
+        background: #e60012;
+        border-radius: 50%;
+    }
+
+    .document-note {
+        background: #f8f8f8;
+        border-left: 4px solid #e60012;
+        padding: 20px 20px 20px 30px;
+        margin-top: 20px;
+    }
+
+    .note-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .note-list li {
+        position: relative;
+        padding: 5px 0 5px 20px;
+        color: #666;
+        line-height: 1.6;
+    }
+
+    .note-list li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 13px;
+        width: 6px;
+        height: 6px;
+        background: #e60012;
+        border-radius: 50%;
+    }
+
+    /* RWD 樣式調整 */
+    @media screen and (max-width: 768px) {
+        .container {
+            padding: 0 10px;
+        }
+
+        .document-content {
+            padding: 15px;
+        }
+
+        .page-title {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .document-section h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .document-item {
+            padding: 8px 0 8px 20px;
+            font-size: 15px;
+        }
+
+        .document-note {
+            padding: 15px 15px 15px 25px;
+        }
+
+        .note-list li {
+            font-size: 14px;
+            padding: 4px 0 4px 18px;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .container {
+            padding: 0 8px;
+        }
+
+        .document-content {
+            padding: 12px;
+        }
+
+        .page-title {
+            font-size: 18px;
+        }
+
+        .document-section h2 {
+            font-size: 16px;
+        }
+
+        .document-item {
+            font-size: 14px;
+        }
+
+        .document-note {
+            margin-top: 15px;
+            padding: 12px 12px 12px 20px;
+        }
+
+        .note-list li {
+            font-size: 13px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <!-- 頁首 -->
+    <div hx-get="header-template-new.html" hx-trigger="load" hx-swap="outerHTML">
+        <div class="loading-placeholder">載入中...</div>
+    </div>
+
+    <!-- 主要內容 -->
+    <main class="site-main">
+        <div class="container">
+            <section class="document-content">
+                <h1 class="page-title">電腦租賃文件</h1>
+                <div class="document-intro">
+                    <p>欲承租電腦及各項週邊設備之廠商或個人，請備有以下項目的文件，做為資料審核及存檔使用。</p>
+                </div>
+                <div class="document-section">
+                    <h2>公司租賃所需文件</h2>
+                    <ul class="document-list">
+                        <li class="document-item">營利事業登記證影本</li>
+                        <li class="document-item">負責人身分證影本</li>
+                        <li class="document-item">押金可用公司銀行本票或現金</li>
+                    </ul>
+                </div>
+                <div class="document-section">
+                    <h2>個人租賃所需文件</h2>
+                    <ul class="document-list">
+                        <li class="document-item">租押金部分僅接受現金</li>
+                        <li class="document-item">承租人身分證影本</li>
+                        <li class="document-item">承租人之戶籍地址及永久聯絡方式</li>
+                    </ul>
+                </div>
+                <div class="document-note">
+                    <h3>注意事項</h3>
+                    <ul class="note-list">
+                        <li>所有文件必須清晰可辨，不接受模糊不清的影本。</li>
+                        <li>請於租賃前備妥所有文件，以加快處理流程。</li>
+                        <li>如有特殊需求，請事先與我們聯繫。</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- 頁尾 -->
+    <div hx-get="footer-template-new.html" hx-trigger="load" hx-swap="outerHTML">
+        <div class="loading-placeholder">載入中...</div>
+    </div>
+</body>
+</html> 
