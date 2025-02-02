@@ -3,28 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="description" content="EPSON EB-U05 投影機租賃服務，提供3400流明高亮度、1920x1200高解析度，適合各種商務展覽、教育訓練使用。">
-    <title>投影機租賃 - EPSON EB-U05 - 海定租筆電/租電腦</title>
+    <meta name="description" content="海定科技提供專業投影機出租服務，包括各種亮度和解析度的投影設備，適合展覽、會議、活動等場合使用。">
+    <title>投影機出租服務 - 海定租筆電/租電腦</title>
     
-    <!-- HTMX 引入 -->
+    <!-- HTMX -->
     <script src="https://unpkg.com/htmx.org@1.9.10"></script>
     
-    <!-- CSS 引入 -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- CSS -->
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/category.css">
-    <link rel="stylesheet" href="css/product.css">
+    
+    <!-- JavaScript -->
+    <script src="js/main.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/header.js" defer></script>
+    <script src="js/footer.js" defer></script>
 </head>
 <body>
-    <!-- 頁首區塊 -->
-    <header class="site-header">
-        <div hx-get="header-template-new.html" hx-trigger="load" hx-swap="outerHTML">
-            <div class="loading-placeholder">載入中...</div>
-        </div>
-    </header>
+    <!-- 頁首 -->
+    <div hx-get="header-template-new.html" hx-trigger="load" hx-swap="outerHTML">
+        <div class="loading-placeholder">載入中...</div>
+    </div>
 
     <!-- 主要內容區 -->
     <main class="site-main">
@@ -116,17 +122,11 @@
         </div>
     </main>
 
-    <!-- 頁尾區塊 -->
-    <footer class="site-footer">
-        <div hx-get="footer-template-new.html" hx-trigger="load" hx-swap="outerHTML">
-            <div class="loading-placeholder">載入中...</div>
-        </div>
-    </footer>
+    <!-- 頁尾 -->
+    <div hx-get="footer-template-new.html" hx-trigger="load" hx-swap="outerHTML">
+        <div class="loading-placeholder">載入中...</div>
+    </div>
 
-    <!-- JavaScript 引入 -->
-    <script src="js/main.js" defer></script>
-    <script src="js/menu.js" defer></script>
-    <script src="js/header.js" defer></script>
-    <script src="js/footer.js" defer></script>
+    <!-- Google Analytics -->
 </body>
 </html> 

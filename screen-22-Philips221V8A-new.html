@@ -2,16 +2,49 @@
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Philips 221V8A 22吋螢幕出租，提供 Full HD 解析度、VA 面板、VGA & HDMI 介面，適合商業展覽、教育訓練等用途。">
-    <title>22吋螢幕 Philips 221V8A - 海定科技</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="海定科技提供 Philips 221V8A 22吋液晶螢幕出租服務，支援 Full HD 1080p 高畫質顯示，適合展覽、會議、活動等場合使用。">
+    <title>Philips 221V8A 22吋液晶螢幕出租 - 海定租筆電/租電腦</title>
+    
+    <!-- HTMX -->
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- CSS -->
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/category.css">
-    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+    
+    <!-- JavaScript -->
+    <script src="js/main.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/header.js" defer></script>
+    <script src="js/footer.js" defer></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // 初始化選單
+        if (typeof initializeMenu === 'function') {
+            initializeMenu();
+        }
+
+        // 監聽 HTMX 事件
+        document.body.addEventListener('htmx:afterSwap', function(evt) {
+            if (evt.detail.target.matches('[hx-get*="header-template"]')) {
+                console.log('頁首已載入，初始化選單');
+                if (typeof initializeMenu === 'function') {
+                    setTimeout(initializeMenu, 0);
+                }
+            }
+        });
+    });
+    </script>
+
     <style>
         .product-detail {
             max-width: 1200px;
@@ -117,9 +150,9 @@
     </style>
 </head>
 <body>
-    <header hx-get="header-template-new.html" hx-trigger="load" hx-swap="outerHTML">
+    <div hx-get="header-template-new.html" hx-trigger="load" hx-swap="outerHTML">
         <div class="loading-placeholder">載入中...</div>
-    </header>
+    </div>
 
     <main class="container">
         <nav class="breadcrumb" aria-label="麵包屑導航" aria-label="麵包屑導航">
@@ -172,9 +205,9 @@
         </section>
     </main>
 
-    <footer hx-get="footer-template-new.html" hx-trigger="load" hx-swap="outerHTML">
+    <div hx-get="footer-template-new.html" hx-trigger="load" hx-swap="outerHTML">
         <div class="loading-placeholder">載入中...</div>
-    </footer>
+    </div>
 
     <script src="js/main.js"></script>
 </body>

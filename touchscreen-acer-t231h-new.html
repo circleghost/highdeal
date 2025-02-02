@@ -2,9 +2,15 @@
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="Acer T231H 23吋觸控螢幕租賃，支援多點觸控，Full HD高解析度，適合展覽、教育、會議等場合使用。">
-    <title>Acer T231H 觸控螢幕出租 - 海定科技</title>
+    <title>Acer T231H 觸控螢幕出租 - 海定租筆電/租電腦</title>
+    
+    <!-- HTMX -->
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <!-- CSS -->
     <link rel="shortcut icon" href="favicon.ico">
@@ -14,8 +20,30 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/category.css">
     
-    <!-- HTMX -->
-    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+    <!-- JavaScript -->
+    <script src="js/main.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/header.js" defer></script>
+    <script src="js/footer.js" defer></script>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // 初始化選單
+        if (typeof initializeMenu === 'function') {
+            initializeMenu();
+        }
+
+        // 監聽 HTMX 事件
+        document.body.addEventListener('htmx:afterSwap', function(evt) {
+            if (evt.detail.target.matches('[hx-get*="header-template"]')) {
+                console.log('頁首已載入，初始化選單');
+                if (typeof initializeMenu === 'function') {
+                    setTimeout(initializeMenu, 0);
+                }
+            }
+        });
+    });
+    </script>
 
     <style>
         .product-detail {
@@ -114,9 +142,9 @@
 </head>
 <body>
     <!-- 載入 Header -->
-    <header hx-get="header-template-new.html" hx-trigger="load" hx-swap="outerHTML">
+    <div hx-get="header-template-new.html" hx-trigger="load" hx-swap="outerHTML">
         <div class="loading-placeholder">載入中...</div>
-    </header>
+    </div>
 
     <main class="container">
         <!-- 麵包屑導航 -->
@@ -164,9 +192,9 @@
     </main>
 
     <!-- 載入 Footer -->
-    <footer hx-get="footer-template-new.html" hx-trigger="load" hx-swap="outerHTML">
+    <div hx-get="footer-template-new.html" hx-trigger="load" hx-swap="outerHTML">
         <div class="loading-placeholder">載入中...</div>
-    </footer>
+    </div>
 
     <!-- Google Analytics -->
     <script type="text/javascript">

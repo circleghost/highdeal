@@ -6,23 +6,31 @@
     <meta name="description" content="提供投影機、無線寬頻分享器、有線寬頻分享器、集線器、筆記型電腦鎖鍊等多種設備租賃服務，適合展覽、會議、教育訓練等多種場合使用。">
     <title>其他設備出租 - 海定租筆電/租電腦</title>
     
-    <!-- HTMX 引入 -->
+    <!-- HTMX -->
     <script src="https://unpkg.com/htmx.org@1.9.10"></script>
     
-    <!-- CSS 引入 -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- CSS -->
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/category.css">
+    
+    <!-- JavaScript -->
+    <script src="js/main.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/header.js" defer></script>
+    <script src="js/footer.js" defer></script>
 </head>
 <body>
-    <header>
-        <div hx-get="header-template-new.html" hx-trigger="load" hx-swap="outerHTML">
-            Loading...
-        </div>
-    </header>
+    <!-- 頁首 -->
+    <div hx-get="header-template-new.html" hx-trigger="load" hx-swap="outerHTML">
+        <div class="loading-placeholder">載入中...</div>
+    </div>
 
     <main class="container">
         <nav class="breadcrumb" aria-label="麵包屑導航" aria-label="麵包屑導航">
@@ -147,12 +155,11 @@
         </section>
     </main>
 
-    <footer>
-        <div hx-get="footer-template-new.html" hx-trigger="load" hx-swap="outerHTML">
-            Loading...
-        </div>
-    </footer>
+    <!-- 頁尾 -->
+    <div hx-get="footer-template-new.html" hx-trigger="load" hx-swap="outerHTML">
+        <div class="loading-placeholder">載入中...</div>
+    </div>
 
-    <script src="js/main.js"></script>
+    <!-- Google Analytics -->
 </body>
 </html> 

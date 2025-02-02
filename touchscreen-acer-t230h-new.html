@@ -2,27 +2,35 @@
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- SEO 相關設定 -->
-    <title>Acer T230H 觸控螢幕出租 - 海定科技有限公司</title>
-    <meta name="description" content="Acer T230H 觸控螢幕租賃，支援多點觸控，Full HD高解析度，可升降高度調整，適合展覽、教育、會議等場合使用。">
-    <meta name="keywords" content="Acer T230H,觸控螢幕,觸控螢幕出租,觸控螢幕租賃,23吋觸控螢幕">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="海定科技提供 Acer T230H 23吋觸控螢幕出租服務，支援多點觸控功能，適合展覽、會議、活動等場合使用。">
+    <title>Acer T230H 23吋觸控螢幕出租 - 海定租筆電/租電腦</title>
     
-    <!-- HTMX 引入 -->
+    <!-- HTMX -->
     <script src="https://unpkg.com/htmx.org@1.9.10"></script>
     
-    <!-- CSS 引入 -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/category.css">
+    
+    <!-- JavaScript -->
+    <script src="js/main.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/header.js" defer></script>
+    <script src="js/footer.js" defer></script>
 </head>
 <body>
-    <!-- 頁首區塊 -->
-    <header class="site-header">
-        <div hx-get="header-template-new.html" hx-trigger="load" hx-swap="outerHTML"></div>
-    </header>
+    <!-- 頁首 -->
+    <div hx-get="header-template-new.html" hx-trigger="load" hx-swap="outerHTML">
+        <div class="loading-placeholder">載入中...</div>
+    </div>
 
     <!-- 主要內容區 -->
     <main class="site-main">
@@ -83,15 +91,11 @@
         </div>
     </main>
 
-    <!-- 頁尾區塊 -->
-    <footer class="site-footer">
-        <div hx-get="footer-template-new.html" hx-trigger="load" hx-swap="outerHTML"></div>
-    </footer>
+    <!-- 頁尾 -->
+    <div hx-get="footer-template-new.html" hx-trigger="load" hx-swap="outerHTML">
+        <div class="loading-placeholder">載入中...</div>
+    </div>
 
-    <!-- JavaScript 引入 -->
-    <script src="js/main.js" defer></script>
-    <script src="js/menu.js" defer></script>
-    <script src="js/header.js" defer></script>
-    <script src="js/footer.js" defer></script>
+    <!-- Google Analytics -->
 </body>
 </html> 

@@ -20,6 +20,12 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/category.css">
     
+    <!-- JavaScript -->
+    <script src="js/main.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/header.js" defer></script>
+    <script src="js/footer.js" defer></script>
+    
     <style>
     .product-card .os-info {
         background: #f0f7ff;
@@ -118,11 +124,10 @@
     </style>
 </head>
 <body>
-    <header>
-        <div hx-get="header-template-new.html" hx-trigger="load" hx-swap="outerHTML">
-            Loading...
-        </div>
-    </header>
+    <!-- 頁首 -->
+    <div hx-get="header-template-new.html" hx-trigger="load" hx-swap="outerHTML">
+        <div class="loading-placeholder">載入中...</div>
+    </div>
 
     <main class="container">
         <nav class="breadcrumb" aria-label="麵包屑導航" aria-label="麵包屑導航">
@@ -274,12 +279,9 @@
         </section>
     </main>
 
-    <footer>
-        <div hx-get="footer-template-new.html" hx-trigger="load" hx-swap="outerHTML">
-            Loading...
-        </div>
-    </footer>
-
-    <script src="js/main.js"></script>
+    <!-- 頁尾 -->
+    <div hx-get="footer-template-new.html" hx-trigger="load" hx-swap="outerHTML">
+        <div class="loading-placeholder">載入中...</div>
+    </div>
 </body>
 </html> 
