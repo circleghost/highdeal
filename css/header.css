@@ -1,9 +1,14 @@
 /* 頁首樣式 */
 .site-header {
     width: 100%;
-    max-width: var(--max-width);
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1320px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 15px;
     box-sizing: border-box;
 }
 
@@ -11,33 +16,172 @@
     display: flex;
     align-items: center;
     padding: 15px 0;
-    width: 100%;
-    max-width: var(--max-width);
-    margin: 0 auto;
 }
 
 .logo {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-}
-
-.logo a {
     display: block;
-    line-height: 0;
+    text-decoration: none;
 }
 
 .logo img {
-    width: auto;
-    height: auto;
+    width: 152px;
+    height: 70px;
     display: block;
 }
 
-.header-content {
+.header-company {
     flex: 1;
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin: 0 20px;
+    font-family: '微軟正黑體', sans-serif;
+}
+
+.main-nav {
+    background: linear-gradient(to right, #0066cc, #e60012);
+    padding: 0;
+}
+
+.nav-container {
     display: flex;
-    flex-direction: column;
+    margin: 0 auto;
+    position: relative;
+}
+
+.nav-content {
+    display: flex;
+    flex: 1;
+    width: 100%;
+}
+
+.nav-item {
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+.nav-item > a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.nav-item > a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* 下拉選單樣式 */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    min-width: 200px;
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1000;
+    border-radius: 0 0 8px 8px;
+    padding: 8px 0;
+}
+
+.nav-item:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 12px 20px;
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: '微軟正黑體', sans-serif;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.dropdown-menu a:hover {
+    color: #e60012;
+    background: rgba(230, 0, 18, 0.05);
+    padding-left: 25px;
+}
+
+.nav-item.apple > a {
+    background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+}
+
+.nav-item.apple > a:hover {
+    background: linear-gradient(135deg, #0077e6 0%, #0066cc 100%);
+}
+
+/* RWD 樣式 */
+@media screen and (max-width: 768px) {
+    .header-company {
+        font-size: 18px;
+        text-align: left;
+        margin: 0 10px;
+    }
+
+    .logo img {
+        width: 120px;
+        height: auto;
+    }
+
+    .nav-content {
+        flex-direction: column;
+    }
+
+    .nav-item {
+        width: 100%;
+    }
+
+    .nav-item a {
+        text-align: left;
+        padding: 12px 15px;
+    }
+
+    .dropdown-menu {
+        position: static;
+        display: none;
+        box-shadow: none;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+    }
+
+    .dropdown-menu.active {
+        display: block;
+    }
+
+    .dropdown-menu a {
+        font-size: 16px;
+        padding: 12px 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header-company {
+        font-size: 16px;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    .dropdown-menu a {
+        font-size: 15px;
+    }
 }
 
 .top-nav {
@@ -85,13 +229,6 @@
 }
 
 /* 導覽列基本樣式 */
-.main-nav {
-    margin-top: 15px;
-    position: relative;
-    z-index: 1000;
-    width: 100%;
-}
-
 .nav-container {
     display: flex;
     width: 100%;
@@ -149,63 +286,6 @@
     background: linear-gradient(135deg, #ff1a1a 0%, #e60012 100%);
     transform: translateY(-1px);
     box-shadow: 0 4px 10px rgba(230, 0, 18, 0.2);
-}
-
-/* Apple 產品特殊樣式 */
-.nav-item.apple > a {
-    background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
-}
-
-.nav-item.apple > a:hover {
-    background: linear-gradient(135deg, #0077e6 0%, #0066cc 100%);
-    box-shadow: 0 4px 10px rgba(0, 102, 204, 0.2);
-}
-
-/* 桌機版下拉選單 */
-.dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    min-width: 200px;
-    background: #fff;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-8px);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    z-index: 2;
-    border-radius: 0 0 8px 8px;
-    padding: 8px 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-.nav-item:hover {
-    z-index: 3;
-}
-
-.nav-item:hover .dropdown-menu {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
-
-.dropdown-menu a {
-    display: block;
-    padding: 12px 20px;
-    color: #333;
-    text-decoration: none;
-    font-family: '微軟正黑體', sans-serif;
-    font-size: 16px;
-    transition: all 0.2s ease;
-    white-space: nowrap;
-    position: relative;
-}
-
-.dropdown-menu a:hover {
-    color: #e60012;
-    background: rgba(230, 0, 18, 0.05);
-    padding-left: 25px;
 }
 
 /* 漢堡選單按鈕基本樣式 */

@@ -1,80 +1,78 @@
 <!-- 頁首 -->
-<header class="site-header" hx-trigger="load" hx-swap="outerHTML">
-    <div class="top-header">
-        <div class="logo">
-            <a href="index-new.html" target="_self">
+<header class="site-header">
+    <div class="container">
+        <div class="top-header">
+            <a href="index-new.html" class="logo">
                 <img src="image/highdeal-logo.png" alt="海定科技 - 租電腦、租筆電" width="152" height="70">
             </a>
-        </div>
-        <div class="header-content">
-            <div class="top-nav">
-                <a href="index-new.html" onmouseout="document.pic1.src='image/home.gif'" onmouseover="document.pic1.src='image/home_1.gif'" target="_self"><img src="image/home.gif" name="pic1" border="0" alt="回首頁"></a><a href="rental-process-new.html" onmouseout="document.pic2.src='image/rent.gif'" onmouseover="document.pic2.src='image/rent_1.gif'" target="_self"><img src="image/rent.gif" name="pic2" border="0" alt="租賃流程"></a><a href="contact-highdeal-new.html" onmouseout="document.pic3.src='image/contact_us.gif'" onmouseover="document.pic3.src='image/contact_us_1.gif'" target="_self"><img src="image/contact_us.gif" name="pic3" border="0" alt="聯絡我們"></a>
+            <div class="header-company">
+                海定科技有限公司 HighDeal Technology Inc.
             </div>
-            <div class="company-info">
-                <div class="info-row">
-                    <p class="company-name">
-                        <span class="zh">海定科技有限公司</span>
-                        <span class="en">HighDeal Technology Inc.</span>
-                    </p>
-                    <div class="update-date">最後更新日期：2024年4月30日</div>
+        </div>
+        
+        <nav class="main-nav">
+            <div class="nav-container">
+                <div class="nav-content">
+                    <div class="nav-item apple">
+                        <a href="apple-rental-new.html">Apple產品</a>
+                        <div class="dropdown-menu">
+                            <a href="apple-macbook-rental-new.html">MacBook 系列</a>
+                            <a href="apple-imac-rental-new.html">iMac 系列</a>
+                            <a href="apple-ipad-rental-new.html">iPad 系列</a>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a href="notebook-rental-new.html">筆記型電腦出租</a>
+                        <div class="dropdown-menu">
+                            <a href="notebook-high-rental-new.html">高階筆電</a>
+                            <a href="notebook-mid-rental-new.html">中階筆電</a>
+                            <a href="notebook-basic-rental-new.html">基本筆電</a>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a href="desktop-rental-new.html">桌上型電腦出租</a>
+                        <div class="dropdown-menu">
+                            <a href="desktop-high-rental-new.html">高階主機</a>
+                            <a href="desktop-mid-rental-new.html">中階主機</a>
+                            <a href="desktop-basic-rental-new.html">基本主機</a>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a href="screen-rental-new.html">螢幕出租</a>
+                        <div class="dropdown-menu">
+                            <a href="screen-28-rental-new.html">28吋螢幕</a>
+                            <a href="screen-27-rental-new.html">27吋螢幕</a>
+                            <a href="screen-24-rental-new.html">24吋螢幕</a>
+                            <a href="screen-22-rental-new.html">22吋螢幕</a>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a href="lcd-rental-new.html">液晶電視出租</a>
+                        <div class="dropdown-menu">
+                            <a href="lcd-65-rental-new.html">65吋電視</a>
+                            <a href="lcd-55-rental-new.html">55吋電視</a>
+                            <a href="lcd-43-rental-new.html">43吋電視</a>
+                            <a href="lcd-32-rental-new.html">32吋電視</a>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a href="projector-rental-new.html">觸控螢幕出租</a>
+                        <div class="dropdown-menu">
+                            <a href="touch-65-rental-new.html">65吋觸控螢幕</a>
+                            <a href="touch-55-rental-new.html">55吋觸控螢幕</a>
+                            <a href="touch-43-rental-new.html">43吋觸控螢幕</a>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a href="other-rental-new.html">其他設備出租</a>
+                        <div class="dropdown-menu">
+                            <a href="printer-rental-new.html">印表機</a>
+                            <a href="scanner-rental-new.html">掃描器</a>
+                            <a href="ups-rental-new.html">不斷電系統</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- 漢堡選單按鈕 -->
-        <button type="button" class="menu-toggle" aria-label="選單" aria-expanded="false">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+        </nav>
     </div>
-
-    <!-- 主導覽列 -->
-    <nav class="main-nav" aria-label="主要導覽">
-        <div class="nav-container" aria-hidden="true">
-            <div class="menu-close"></div>
-            <div class="nav-content">
-                <div class="nav-item apple">
-                    <a href="apple-new.html">Apple產品</a>
-                </div>
-                <div class="nav-item">
-                    <a href="laptop-new.html">筆記型電腦出租</a>
-                    <div class="dropdown-menu">
-                        <a href="laptop-advanced-new.html">頭等艙</a>
-                        <a href="laptop-intermediate-new.html">商務艙</a>
-                        <a href="laptop-basic-new.html">經濟艙</a>
-                    </div>
-                </div>
-                <div class="nav-item">
-                    <a href="desktop-new.html">桌上型電腦出租</a>
-                </div>
-                <div class="nav-item">
-                    <a href="screen-new.html">螢幕出租</a>
-                    <div class="dropdown-menu">
-                        <a href="screen-28-new.html">28吋螢幕</a>
-                        <a href="screen-27-new.html">27吋螢幕</a>
-                        <a href="screen-24-new.html">24吋螢幕</a>
-                        <a href="screen-23-new.html">23吋螢幕</a>
-                        <a href="screen-22-new.html">22吋螢幕</a>
-                        <a href="screen-19-new.html">19吋螢幕</a>
-                    </div>
-                </div>
-                <div class="nav-item">
-                    <a href="led-tv-new.html">液晶電視出租</a>
-                    <div class="dropdown-menu">
-                        <a href="led-tv-Philips65PUH6052-new.html">65 吋</a>
-                        <a href="led-tv-55-new.html">55 吋</a>
-                        <a href="led-tv-lg47LM6200-new.html">47 吋</a>
-                        <a href="led-tv-42-43-new.html">42/43 吋</a>
-                        <a href="led-tv-lg32-new.html">32 吋</a>
-                    </div>
-                </div>
-                <div class="nav-item">
-                    <a href="touchscreen-new.html">觸控螢幕出租</a>
-                </div>
-                <div class="nav-item">
-                    <a href="others-new.html">其他設備出租</a>
-                </div>
-            </div>
-        </div>
-    </nav>
 </header> 
