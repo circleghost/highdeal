@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="租電腦和租筆電，一定要找專業的海定科技公司。海定以『量身訂作』的服務理念，提供消費者租電腦、租筆電、租螢幕、電腦維修、電腦專業美容和電腦環保回收服務，甚至可以到府維修檢測，省去您搬運上的麻煩。更多優惠的租電腦、租筆電方案，請洽海定科技公司。">
+    <meta name="keywords" content="租電腦,租筆電">
+    <meta name="google-site-verification" content="_vjuYUKXHYEuXfFMTP1qpO2HEGNTTaNVAytADZ5OjyI">
+    <title>海定科技公司 | 租電腦、租筆電</title>
+    
+    <!-- HTMX -->
+    <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    
+    <!-- JavaScript -->
+    <script src="js/main.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/header.js" defer></script>
+    <script src="js/footer.js" defer></script>
+
+    <style>
+    /* 主要內容區域樣式 */
+    .site-main {
+        padding: 20px 0;
+    }
+
+    .container {
+        max-width: 940px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    /* 產品輪播樣式 */
+    .product-carousel {
+        margin-bottom: 30px;
+    }
+
+    .carousel-items {
+        display: flex;
+        gap: 20px;
+        overflow-x: auto;
+        padding: 10px 0;
+        scrollbar-width: thin;
+        scrollbar-color: #888 #f1f1f1;
+    }
+
+    .carousel-item {
+        flex: 0 0 auto;
+        transition: transform 0.3s ease;
+    }
+
+    .carousel-item:hover {
+        transform: translateY(-5px);
+    }
+
+    .carousel-item img {
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    /* 公司介紹樣式 */
+    .company-intro {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        padding: 30px;
+        margin-bottom: 30px;
+    }
+
+    .microsoft-notice {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .microsoft-notice p {
+        color: #666;
+        margin-top: 15px;
+        line-height: 1.6;
+    }
+
+    .service-intro h2 {
+        color: #333;
+        font-size: 24px;
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #e60012;
+    }
+
+    .service-intro p {
+        color: #666;
+        line-height: 1.8;
+        margin-bottom: 25px;
+    }
+
+    .service-intro strong {
+        color: #e60012;
+        font-weight: bold;
+    }
+
+    /* 產品連結樣式 */
+    .product-links {
+        background: #f8f8f8;
+        border-radius: 8px;
+        padding: 20px;
+    }
+
+    .product-links h2 {
+        color: #333;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .product-links ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 10px;
+    }
+
+    .product-links a {
+        color: #e60012;
+        text-decoration: none;
+        display: block;
+        padding: 8px 15px;
+        background: #fff;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+    }
+
+    .product-links a:hover {
+        background: #e60012;
+        color: #fff;
+        transform: translateX(5px);
+    }
+
+    @media screen and (max-width: 768px) {
+        .company-intro {
+            padding: 20px;
+        }
+
+        .service-intro h2 {
+            font-size: 20px;
+        }
+
+        .product-links ul {
+            grid-template-columns: 1fr;
+        }
+    }
+    </style>
+</head>
+<body>
+    <!-- 頁首 -->
+    <div hx-get="header-template-new.html" hx-trigger="load" hx-swap="outerHTML">
+        <div class="loading-placeholder">載入中...</div>
+    </div>
+
+    <!-- 主要內容 -->
+    <main class="site-main">
+        <div class="container">
+            <!-- 產品輪播 -->
+            <section class="product-carousel">
+                <div class="carousel-items">
+                    <a href="led-tv-new.html" class="carousel-item">
+                        <img src="../image/ad_ledtv.jpg" alt="LED 電視出租" width="285" height="120">
+                    </a>
+                    <a href="apple-new.html" class="carousel-item">
+                        <img src="../image/ad_apple_macpro.jpg" alt="Apple 產品出租" width="285" height="120">
+                    </a>
+                    <a href="touchscreen-new.html" class="carousel-item">
+                        <img src="../image/ad_touch_screen_1.jpg" alt="觸控螢幕出租" width="285" height="120">
+                    </a>
+                </div>
+            </section>
+
+            <!-- 公司介紹 -->
+            <section class="company-intro">
+                <div class="content-area">
+                    <article class="page-content">
+                        <div class="microsoft-notice">
+                            <img src="../image/highdeal-head.gif" alt="海定科技授權宣告" width="608" height="21">
+                            <p>本公司支持並尊重智慧財產權，於2008年與Microsoft簽屬SPLA合約，<br>
+                            取得Microsoft正式的授權，提供合法軟體於出租時使用。</p>
+                        </div>
+
+                        <div class="service-intro">
+                            <h2>電腦出租</h2>
+                            <p>海定提供您全省<strong>租電腦</strong>、<strong>租筆電</strong>服務，電腦出租種類多元化，包含了：桌上型電腦、筆電、LCD液晶螢幕和雷射印表機等，另有經驗豐富及服務優良快速的團隊替您解決電腦故障問題。目前許多國際性會議、世貿展覽與產品發表記者會等活動皆指定海定科技公司為租電腦和租筆電的廠商。</p>
+
+                            <h2>電腦維修</h2>
+                            <p>本公司聘請有資深專業技師處理桌上型電腦、筆記型電腦、液晶螢幕（電視）及筆記型電腦電池維修，尤其筆記型電腦技術最為精湛。</p>
+
+                            <h2>電腦買賣</h2>
+                            <p>採專人負責管轄之客戶，以有效的縮短聯繫及出貨上所需的流程時間。</p>
+                        </div>
+
+                        <nav class="product-links">
+                            <h2>產品連結</h2>
+                            <ul>
+                                <li><a href="apple-new.html" title="筆記型電腦出租 Laptop">Apple 產品</a></li>
+                                <li><a href="laptop-new.html" title="筆記型電腦出租 Laptop">筆記型電腦出租</a></li>
+                                <li><a href="desktop-new.html" title="桌上型電腦出租 Desktop">桌上型電腦出租</a></li>
+                                <li><a href="screen-new.html" title="螢幕出租 Screen">螢幕出租</a></li>
+                                <li><a href="led-tv-new.html" title="液晶電視出租 LED TV">液晶電視出租</a></li>
+                                <li><a href="touchscreen-new.html" title="觸控螢幕出租 Touchscreen">觸控螢幕出租</a></li>
+                            </ul>
+                        </nav>
+                    </article>
+
+                    <aside class="sidebar">
+                        <div class="quick-links">
+                            <h2>快速連結</h2>
+                            <ul>
+                                <li>
+                                    <img src="../image/arrow-2.gif" alt="">
+                                    <a href="performance-new.html" title="業務實績">業務實績</a>
+                                </li>
+                                <li>
+                                    <img src="../image/arrow-2.gif" alt="">
+                                    <a href="rental-process-new.html" title="租電腦流程">電腦租賃流程</a>
+                                </li>
+                                <li>
+                                    <img src="../image/arrow-2.gif" alt="">
+                                    <a href="rental-document-new.html" title="租電腦文件">電腦租賃文件</a>
+                                </li>
+                                <li>
+                                    <img src="../image/arrow-2.gif" alt="">
+                                    <a href="contact-highdeal-new.html" title="聯絡海定">聯絡海定</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- 頁尾 -->
+    <div hx-get="footer-template-new.html" hx-trigger="load" hx-swap="outerHTML">
+        <div class="loading-placeholder">載入中...</div>
+    </div>
+</body>
+</html> 

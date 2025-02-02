@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="海定科技提供經濟實惠的筆記型電腦租賃服務，包括 Lenovo Ideapad 系列等多種機型，適合一般文書處理、簡報展示等基本使用需求。">
+    <title>筆記型電腦出租 - 經濟艙 - 海定租筆電/租電腦</title>
+    
+    <!-- HTMX -->
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/category.css">
+    
+    <style>
+    .product-card .os-info {
+        background: #f0f7ff;
+        color: #0078d4;
+        padding: 8px 15px;
+        border-radius: 4px;
+        margin: 0 0 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.95em;
+        font-weight: 500;
+        border: 1px solid #cce4ff;
+        transition: all 0.2s ease;
+        width: 100%;
+        text-align: center;
+    }
+
+    .product-card .os-info i {
+        color: #0078d4;
+        margin-bottom: 4px;
+        font-size: 1.2em;
+    }
+
+    .product-card .os-info span {
+        margin: 4px 0;
+        font-weight: 600;
+    }
+
+    .product-card .os-info .size-info {
+        color: #666;
+        font-size: 0.9em;
+        margin: 0;
+        font-weight: normal;
+    }
+
+    .product-card .os-info:hover {
+        background: #e6f2ff;
+        border-color: #99ceff;
+    }
+
+    .product-card .product-specs {
+        padding: 0 15px;
+        margin-top: 15px;
+    }
+
+    .product-card .product-specs ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card .product-specs li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 12px;
+        color: #333;
+        font-size: 18px;
+        line-height: 1.6;
+        width: 100%;
+        text-align: center;
+        position: relative;
+        padding-left: 15px;
+    }
+
+    .product-card .product-specs li:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 6px;
+        height: 6px;
+        background-color: #e60012;
+        border-radius: 50%;
+    }
+
+    @media (max-width: 768px) {
+        .product-card .product-specs li {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .product-card .product-specs li {
+            font-size: 15px;
+            margin-bottom: 8px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div hx-get="header-template-new.html" hx-trigger="load" hx-swap="outerHTML">
+            Loading...
+        </div>
+    </header>
+
+    <main class="container">
+        <nav class="breadcrumb" aria-label="麵包屑導航" aria-label="麵包屑導航">
+            <ul>
+                <li><a href="/">首頁</a></li>
+                <li><a href="laptop-new.html">筆記型電腦出租</a></li>
+                <li><span aria-current="page">經濟艙</span></li>
+            </ul>
+        </nav>
+
+        <div class="page-header">
+            <h1>筆記型電腦出租 - 經濟艙</h1>
+            <div class="page-description">
+                <p>提供經濟實惠的筆記型電腦租賃方案，適合一般文書處理、簡報展示等基本使用需求。所有設備均經過專業檢測與保養，確保最佳使用體驗。</p>
+            </div>
+        </div>
+
+        <div class="screen-nav">
+            <ul>
+                <li><a href="laptop-advanced-new.html">頭等艙</a></li>
+                <li><a href="laptop-intermediate-new.html">商務艙</a></li>
+                <li><a href="laptop-basic-new.html" class="active">經濟艙</a></li>
+            </ul>
+        </div>
+
+        <div class="product-grid">
+            <!-- Lenovo Ideapad 700 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="graphic/Laptop/IdeaPad700.gif" alt="Lenovo Ideapad 700">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Lenovo Ideapad 700</h3>
+                    <div class="os-info">
+                        <i class="fa-brands fa-windows"></i>
+                        <span>Windows 10 Pro</span>
+                        <p class="size-info">64位元作業系統</p>
+                    </div>
+                    <div class="product-specs">
+                        <ul>
+                            <li><span aria-current="page">Intel Core i7 6700HQ 2.6GHz</span></li>
+                            <li><span aria-current="page">480GB SSD HDD</span></li>
+                            <li><span aria-current="page">16GB DDR4 (RAM)</span></li>
+                            <li><span aria-current="page">NVIDIA GeForce GTX950M 獨顯2G</span></li>
+                            <li><span aria-current="page">無光碟機</span></li>
+                            <li><span aria-current="page">內建攝影機</span></li>
+                            <li><span aria-current="page">USB3.0 / HDMI</span></li>
+                            <li><span aria-current="page">15.6"LED寬螢幕 (1920 *1080)</span></li>
+                            <li><span aria-current="page">2.3kg</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lenovo IdeaPad L3i -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="graphic/Laptop/Lenovo-IdeaPad-L3i.jpg" alt="Lenovo IdeaPad L3i">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Lenovo IdeaPad L3i</h3>
+                    <div class="os-info">
+                        <i class="fa-brands fa-windows"></i>
+                        <span>Windows 10 Pro</span>
+                        <p class="size-info">64位元作業系統</p>
+                    </div>
+                    <div class="product-specs">
+                        <ul>
+                            <li><span aria-current="page">Intel Core i3 10110U 2.1GHz</span></li>
+                            <li><span aria-current="page">240GB SSD HDD</span></li>
+                            <li><span aria-current="page">12GB DDR4 (RAM)</span></li>
+                            <li><span aria-current="page">無光碟機</span></li>
+                            <li><span aria-current="page">內建攝影機</span></li>
+                            <li><span aria-current="page">USB3.0 Type-C*1 + USB3.1*2</span></li>
+                            <li><span aria-current="page">HDMI 2.0</span></li>
+                            <li><span aria-current="page">15.6"IPS面板 (1920 *1080)</span></li>
+                            <li><span aria-current="page">2.2kg</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lenovo Ideapad 310 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="graphic/Laptop/Ideapad310.gif" alt="Lenovo Ideapad 310">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Lenovo Ideapad 310</h3>
+                    <div class="os-info">
+                        <i class="fa-brands fa-windows"></i>
+                        <span>Windows 10</span>
+                        <p class="size-info">64位元作業系統</p>
+                    </div>
+                    <div class="product-specs">
+                        <ul>
+                            <li><span aria-current="page">Intel Core i5 6200U 2.3GHz</span></li>
+                            <li><span aria-current="page">480GB SSD HDD</span></li>
+                            <li><span aria-current="page">12GB DDR4 (RAM)</span></li>
+                            <li><span aria-current="page">NVIDIA GeForce GX920M獨顯2G</span></li>
+                            <li><span aria-current="page">DVD-RW</span></li>
+                            <li><span aria-current="page">內建攝影機</span></li>
+                            <li><span aria-current="page">USB3.0 / HDMI & VGA</span></li>
+                            <li><span aria-current="page">14"LED寬螢幕 (1920 *1080)</span></li>
+                            <li><span aria-current="page">2.1kg</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lenovo Ideapad 300 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="graphic/Laptop/Ideapad300.gif" alt="Lenovo Ideapad 300">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Lenovo Ideapad 300</h3>
+                    <div class="os-info">
+                        <i class="fa-brands fa-windows"></i>
+                        <span>Windows 10 Pro</span>
+                        <p class="size-info">64位元作業系統</p>
+                    </div>
+                    <div class="product-specs">
+                        <ul>
+                            <li><span aria-current="page">Intel Core i5 6200U 2.3GHz</span></li>
+                            <li><span aria-current="page">240GB SSD HDD</span></li>
+                            <li><span aria-current="page">8GB DDR3 (RAM)</span></li>
+                            <li><span aria-current="page">AMD R5-M330獨顯2G</span></li>
+                            <li><span aria-current="page">DVD-RW</span></li>
+                            <li><span aria-current="page">內建攝影機</span></li>
+                            <li><span aria-current="page">USB3.0 / HDMI & VGA</span></li>
+                            <li><span aria-current="page">15.6"LED寬螢幕 (1920 *1080)</span></li>
+                            <li><span aria-current="page">2.3kg</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="rental-notice">
+            <h2>租賃說明</h2>
+            <ul>
+                <li><span aria-current="page">租賃時間：週一至週日 09:00-21:00</span></li>
+                <li><span aria-current="page">聯絡電話：(02)2771-2990</span></li>
+                <li><span aria-current="page">LINE ID：@haiding</span></li>
+                <li><span aria-current="page">營業地址：台北市大安區忠孝東路四段2號2樓之1</span></li>
+            </ul>
+            <p>* 如需了解更多租賃詳情，歡迎直接與我們聯繫</p>
+        </section>
+    </main>
+
+    <footer>
+        <div hx-get="footer-template-new.html" hx-trigger="load" hx-swap="outerHTML">
+            Loading...
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

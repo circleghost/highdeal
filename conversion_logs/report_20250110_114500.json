@@ -1,0 +1,536 @@
+{
+  "processed_files": [
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/rental-document.htm",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/screen-27-ViewSonic VX2718-PC-mhd.html",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/screen-28-VP28UQG.html",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/apple-ipad2.html",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/screen-22-samsungb2230n.htm",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/touchscreen-acer-t230h.html",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/screen-23-lg23ips235p-bn.htm",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/led-tv-lg47LM6200.htm",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/screen-27-VX2757MHD.html",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/apple-iPad-64GB.html",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/others.htm",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/screen-27.html",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/index.html",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/screen-22-Philips221V8A.html",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/screen-28-VG280K.html",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/touchscreen-acer-t231h.html",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/contact-highdeal.htm",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/screen-24-Philips 241V8W.html",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/desktop.htm",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/led-tv-lg42-3d.htm",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/laptop-intermediate.htm",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/screen-19-va903b.htm",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/led-tv-philips55PUH6002.html",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/led-tv-42-43.html",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/led-tv-lg4K65UB930T.html",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/screen-19-va916.htm",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/screen-24.htm",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/led-tv-55.html",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/screen-19.htm",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/screen-22-Philips223V5LHSW.html",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/laptop-basic.htm",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/led-tv-Toshiba4K43U7000VS.html",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/apple-iPad Pro 64GB.html",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/touchscreen-42lcdtv.html",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/rental-process.htm",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/screen-22.htm",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/led-tv-42.htm",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/screen-23.htm",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/touchscreen.html",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/led-tv-lg32.htm",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/performance.htm",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/screen-19-va903m.htm",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/led-tv-lg55LB5800.htm",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/screen-28.html",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/screen-24-ViewSonic VX2452mh.html",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/led-tv.htm",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/screen-27-CE2742V.html",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/led-tv-Philips65PUH6052.html",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/laptop-advanced.htm",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/laptop.htm",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/led-tv-lg42.htm",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/others-projector.html",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/led-tv-lg42LM6400.htm",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/screen.htm",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/led-tv-lg4K43UP771C0WB.html",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/apple.html",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/screen-24-Dell P2419H.html",
+    "/Users/circleghost/客戶網站/海定/wwwroot eee/screen-27-VX2756SML.htm"
+  ],
+  "failed_files": [
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/googled059dd3f1383fefc.html",
+      "error": "'NoneType' object has no attribute 'insert'"
+    }
+  ],
+  "warnings": [],
+  "encoding_issues": [],
+  "meta_tag_issues": [
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/rental-document.htm",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/screen-27-ViewSonic VX2718-PC-mhd.html",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/screen-28-VP28UQG.html",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/apple-ipad2.html",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/screen-22-samsungb2230n.htm",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/touchscreen-acer-t230h.html",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/screen-23-lg23ips235p-bn.htm",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/led-tv-lg47LM6200.htm",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/screen-27-VX2757MHD.html",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/apple-iPad-64GB.html",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/others.htm",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/screen-27.html",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/index.html",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/screen-22-Philips221V8A.html",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/screen-28-VG280K.html",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/touchscreen-acer-t231h.html",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/contact-highdeal.htm",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/screen-24-Philips 241V8W.html",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/desktop.htm",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/led-tv-lg42-3d.htm",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/laptop-intermediate.htm",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/screen-19-va903b.htm",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/led-tv-philips55PUH6002.html",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/led-tv-42-43.html",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/led-tv-lg4K65UB930T.html",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/screen-19-va916.htm",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/screen-24.htm",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/led-tv-55.html",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/screen-19.htm",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/screen-22-Philips223V5LHSW.html",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/laptop-basic.htm",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/led-tv-Toshiba4K43U7000VS.html",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/apple-iPad Pro 64GB.html",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/touchscreen-42lcdtv.html",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/rental-process.htm",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/screen-22.htm",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/led-tv-42.htm",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/screen-23.htm",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/touchscreen.html",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/led-tv-lg32.htm",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/performance.htm",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/screen-19-va903m.htm",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/led-tv-lg55LB5800.htm",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/screen-28.html",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/screen-24-ViewSonic VX2452mh.html",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/led-tv.htm",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/screen-27-CE2742V.html",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/led-tv-Philips65PUH6052.html",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/laptop-advanced.htm",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/laptop.htm",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/led-tv-lg42.htm",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/others-projector.html",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/led-tv-lg42LM6400.htm",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/screen.htm",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/led-tv-lg4K43UP771C0WB.html",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/apple.html",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/screen-24-Dell P2419H.html",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    },
+    {
+      "file": "/Users/circleghost/客戶網站/海定/wwwroot eee/screen-27-VX2756SML.htm",
+      "changes": [
+        "Added charset meta tag",
+        "Updated content-type meta tag",
+        "Added viewport meta tag"
+      ]
+    }
+  ]
+}

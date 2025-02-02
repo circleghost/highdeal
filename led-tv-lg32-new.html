@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LG 32吋智慧型液晶電視出租 32LB5800,支援Full HD 1080p高畫質,LED背光,動態影像流暢技術120Hz">
+    <title>32吋螢幕 LG 32LB5800 - 海定科技</title>
+    
+    <!-- CSS -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/category.css">
+    
+    <!-- HTMX -->
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+
+    <style>
+        .product-detail {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .product-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .product-image-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .product-image-section img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .product-info-section {
+            padding: 1rem;
+        }
+
+        .product-info-section h1 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #333;
+        }
+
+        .specs-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .specs-list li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            color: #666;
+        }
+
+        .specs-list li:before {
+            content: "•";
+            color: #e60012;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+
+        .dimension-section {
+            margin-top: 3rem;
+        }
+
+        .dimension-section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .dimension-image {
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+
+        .dimension-image img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .dimension-note {
+            color: #e60012;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .product-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 載入 Header -->
+    <header hx-get="header-template-new.html" hx-trigger="load" hx-swap="outerHTML">
+        <div class="loading-placeholder">載入中...</div>
+    </header>
+
+    <main class="container">
+        <!-- 麵包屑導航 -->
+        <nav class="breadcrumb" aria-label="麵包屑導航" aria-label="麵包屑導航">
+            <ul>
+                <li><a href="/">首頁</a></li>
+                <li><a href="led-tv-new.html">液晶電視出租</a></li>
+                <li><a href="led-tv-32-new.html">32吋</a></li>
+                <li><span aria-current="page">LG 32吋 32LB5800</span></li>
+            </ul>
+        </nav>
+
+        <div class="product-detail">
+            <div class="product-content">
+                <!-- 產品圖片區 -->
+                <div class="product-image-section">
+                    <img src="graphic/LED-TV/lg-32LB5800-220.gif" alt="LG 32吋智慧型液晶電視 32LB5800">
+                </div>
+
+                <!-- 產品資訊區 -->
+                <div class="product-info-section">
+                    <h1>LG 32吋 LED SMART TV 32LB5800</h1>
+                    <ul class="specs-list">
+                        <li><span aria-current="page">支援Full HD 1080p</span></li>
+                        <li><span aria-current="page">超高解析度1920*1080</span></li>
+                        <li><span aria-current="page">動態影像流暢技術：120Hz</span></li>
+                        <li><span aria-current="page">聲音輸出：20W</span></li>
+                        <li><span aria-current="page">介面：HDMI / USB 2.0 / LAN / AV / 色差 / 數位音效輸出等等</span></li>
+                        <li><span aria-current="page">支援USB撥放</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 尺寸規格圖區 -->
+            <div class="dimension-section">
+                <h2>產品尺寸</h2>
+                <div class="dimension-note">丈量尺寸：公分　圖形僅供參考，請以圖上標註之正確尺寸為基準</div>
+                <div class="dimension-image">
+                    <img src="graphic/LED-TV/size-LG-SMART-TV-32LB5800.gif" alt="LG 32吋智慧型液晶電視尺寸圖">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 載入 Footer -->
+    <footer hx-get="footer-template-new.html" hx-trigger="load" hx-swap="outerHTML">
+        <div class="loading-placeholder">載入中...</div>
+    </footer>
+
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+            var pageTracker = _gat._getTracker("UA-10390399-31");
+            pageTracker._trackPageview();
+        } catch(err) {}
+    </script>
+</body>
+</html> 

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="海定科技提供專業的筆記型電腦租賃服務，包括高階、中階及入門級筆電，支援 Windows 11/10，效能優良，提供展覽、活動最佳選擇。">
+    <title>筆記型電腦出租 - 海定租筆電/租電腦</title>
+    
+    <!-- HTMX -->
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/category.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    
+    <!-- JavaScript -->
+    <script src="js/main.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/header.js" defer></script>
+    <script src="js/footer.js" defer></script>
+</head>
+<body>
+    <!-- 頁首 -->
+    <div hx-get="header-template-new.html" hx-trigger="load" hx-swap="outerHTML">
+        <div class="loading-placeholder">載入中...</div>
+    </div>
+
+    <!-- 主要內容 -->
+    <main class="site-main">
+        <div class="container">
+            <!-- 麵包屑導航 -->
+            <nav class="breadcrumb">
+                <ul>
+                    <li><a href="/">首頁</a></li>
+                    <li>筆記型電腦出租</li>
+                </ul>
+            </nav>
+
+            <!-- 頁面標題 -->
+            <div class="page-header">
+                <h1>筆記型電腦租借 - 商務筆電出租服務</h1>
+                <p class="highlight-text">提供頭等艙、商務艙、經濟艙等多種等級筆記型電腦租賃，包含 Lenovo、ASUS、HP 等知名品牌，搭載 Windows 10/11 專業版作業系統，適合展覽、會議、教育訓練等多種場合使用。</p>
+            </div>
+
+            <!-- 分類導航 -->
+            <nav class="screen-sizes">
+                <a href="laptop-advanced-new.html" class="size-link">頭等艙</a>
+                <a href="laptop-intermediate-new.html" class="size-link">商務艙</a>
+                <a href="laptop-basic-new.html" class="size-link">經濟艙</a>
+            </nav>
+
+            <!-- 產品列表 -->
+            <div class="product-grid">
+                <!-- 頭等艙 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="graphic/Laptop/MSI-Thin-GF63-12HW-010TW.jpg" alt="MSI Thin GF63">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">頭等艙</h3>
+                        <ul class="product-specs">
+                            <li><a href="/new-site/laptop-advanced-new.html">MSI Thin GF63 12HW-010TW</a></li>
+                            <li><a href="/new-site/laptop-advanced-new.html">Lenovo LOQ 15IRH8 82XV00JSTW</a></li>
+                            <li><a href="/new-site/laptop-advanced-new.html">Acer Nitro5 AN515-57-76QN</a></li>
+                            <li><a href="/new-site/laptop-advanced-new.html">HP Victus 16-d0662TX</a></li>
+                            <li><a href="/new-site/laptop-advanced-new.html">Lenovo S3i 83EM0008TW</a></li>
+                            <li><a href="/new-site/laptop-advanced-new.html">Acer A514-54-57ZX NB (黑色)</a></li>
+                            <li><a href="/new-site/laptop-advanced-new.html">HP 14s-cf3037TU</a></li>
+                            <li><a href="/new-site/laptop-advanced-new.html">Acer A514-53-57SV</a></li>
+                        </ul>
+                        <div class="spec-link">
+                            <a href="/new-site/laptop-advanced-new.html">詳細規格</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 商務艙 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="graphic/Laptop/Dynabook-CS40L-HB.gif" alt="Dynabook CS40L-HB">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">商務艙</h3>
+                        <ul class="product-specs">
+                            <li><a href="/new-site/laptop-intermediate-new.html">Dynabook CS40L-HB</a></li>
+                            <li><a href="/new-site/laptop-intermediate-new.html">Lenovo L340</a></li>
+                            <li><a href="/new-site/laptop-intermediate-new.html">Lenovo Ideapad 330</a></li>
+                            <li><a href="/new-site/laptop-intermediate-new.html">Dell Inspiron 15-5570</a></li>
+                        </ul>
+                        <div class="spec-link">
+                            <a href="/new-site/laptop-intermediate-new.html">詳細規格</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 經濟艙 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="graphic/Laptop/IdeaPad700.gif" alt="Lenovo Ideapad 700">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">經濟艙</h3>
+                        <ul class="product-specs">
+                            <li><a href="/new-site/laptop-basic-new.html">Lenovo Ideapad 700</a></li>
+                            <li><a href="/new-site/laptop-basic-new.html">Lenovo IdeaPad L3i</a></li>
+                            <li><a href="/new-site/laptop-basic-new.html">Lenovo Ideapad 310</a></li>
+                            <li><a href="/new-site/laptop-basic-new.html">Lenovo Ideapad 300</a></li>
+                        </ul>
+                        <div class="spec-link">
+                            <a href="/new-site/laptop-basic-new.html">詳細規格</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 租賃說明 -->
+            <div class="rental-notice">
+                <h2>租賃說明</h2>
+                <ul>
+                    <li>最短租期為1天，長期租賃另有優惠方案</li>
+                    <li>提供免費運送及安裝服務（限大台北地區）</li>
+                    <li>所有設備均經過專業檢測，確保品質</li>
+                    <li>提供技術支援及維修服務</li>
+                </ul>
+                <p>如需詳細租賃資訊，請撥打服務專線：(02)2762-6333</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- 頁尾 -->
+    <div hx-get="footer-template-new.html" hx-trigger="load" hx-swap="outerHTML">
+        <div class="loading-placeholder">載入中...</div>
+    </div>
+</body>
+</html> 
