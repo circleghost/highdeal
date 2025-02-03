@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="海定科技 - 找不到頁面">
+    <title>找不到頁面 - 海定租筆電/租電腦</title>
+    
+    <!-- HTMX -->
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    
+    <!-- JavaScript -->
+    <script src="./js/main.js" defer></script>
+    <script src="./js/header.js" defer></script>
+    <script src="./js/footer.js" defer></script>
+
+    <style>
+        .error-container {
+            max-width: 800px;
+            margin: 4rem auto;
+            padding: 2rem;
+            text-align: center;
+            font-family: '微軟正黑體', sans-serif;
+        }
+
+        .error-code {
+            font-size: 120px;
+            font-weight: bold;
+            color: #e60012;
+            margin: 0;
+            line-height: 1;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .error-message {
+            font-size: 24px;
+            color: #333;
+            margin: 1rem 0 2rem;
+        }
+
+        .error-description {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .error-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        .error-button {
+            display: inline-flex;
+            align-items: center;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .error-button.primary {
+            background: #e60012;
+            color: white;
+        }
+
+        .error-button.primary:hover {
+            background: #ff1a1a;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(230, 0, 18, 0.2);
+        }
+
+        .error-button.secondary {
+            background: #f8f9fa;
+            color: #333;
+            border: 2px solid #ddd;
+        }
+
+        .error-button.secondary:hover {
+            background: #fff;
+            border-color: #e60012;
+            color: #e60012;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .error-button i {
+            margin-right: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .error-container {
+                margin: 2rem auto;
+                padding: 1rem;
+            }
+
+            .error-code {
+                font-size: 80px;
+            }
+
+            .error-message {
+                font-size: 20px;
+            }
+
+            .error-description {
+                font-size: 16px;
+            }
+
+            .error-actions {
+                flex-direction: column;
+            }
+
+            .error-button {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 載入 Header -->
+    <div hx-get="header-template-new.html" hx-trigger="load" hx-swap="outerHTML">
+        <div class="loading-placeholder">載入中...</div>
+    </div>
+
+    <main class="container">
+        <div class="error-container">
+            <h1 class="error-code">404</h1>
+            <h2 class="error-message">找不到頁面</h2>
+            <p class="error-description">
+                抱歉，您要找的頁面似乎不存在。<br>
+                這可能是因為該頁面已被移除或連結已過期。
+            </p>
+            <div class="error-actions">
+                <a href="/" class="error-button primary">
+                    <i class="fas fa-home"></i>
+                    返回首頁
+                </a>
+                <a href="contact-highdeal-new.html" class="error-button secondary">
+                    <i class="fas fa-envelope"></i>
+                    聯絡我們
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- 載入 Footer -->
+    <div hx-get="footer-template-new.html" hx-trigger="load" hx-swap="outerHTML">
+        <div class="loading-placeholder">載入中...</div>
+    </div>
+</body>
+</html> 
