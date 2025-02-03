@@ -86,4 +86,45 @@ body .site-main .container {
     max-width: 100%;
     padding: 0 15px;
   }
+}
+
+.company-slogan {
+    position: relative;
+    background: #fff;
+    padding: 1.8rem 2rem;
+    margin: 1.5rem 0;
+    text-align: left;
+    border: 1px solid #eee;
+    border-left: 3px solid #e60012;
+}
+
+.company-slogan h1 {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+    font-weight: normal;
+    line-height: 1.4;
+}
+
+.company-slogan p {
+    font-size: 1.4rem;
+    color: #333;
+    margin: 0;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .company-slogan {
+        padding: 1.5rem;
+        margin: 1rem 0;
+    }
+    
+    .company-slogan h1 {
+        font-size: 1.1rem;
+    }
+    
+    .company-slogan p {
+        font-size: 1.3rem;
+    }
 } 
