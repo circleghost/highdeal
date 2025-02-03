@@ -43,6 +43,8 @@
     padding: 0;
     border-radius: 8px;
     margin: 0 15px;
+    position: relative;
+    z-index: 100;
 }
 
 .nav-container {
@@ -51,7 +53,6 @@
     max-width: var(--max-width);
     margin: 0 auto;
     border-radius: 8px;
-    overflow: hidden;
 }
 
 .nav-content {
@@ -240,7 +241,6 @@
     max-width: var(--max-width);
     margin: 0 auto;
     border-radius: 8px;
-    overflow: hidden;
 }
 
 .nav-content {
@@ -380,6 +380,11 @@
         z-index: 1000;
     }
 
+    /* 隱藏公司名稱 */
+    .header-company {
+        display: none;
+    }
+
     /* 手機版導覽列容器 */
     .nav-container {
         position: fixed;
@@ -402,54 +407,14 @@
 
     /* 選單內容包裝器 */
     .nav-content {
-        padding-top: 40px;
+        padding-top: 20px;
         overflow-y: auto;
-        max-height: calc(100vh - 40px);
+        max-height: calc(100vh - 20px);
     }
 
-    /* 關閉按鈕 */
+    /* 移除關閉按鈕相關樣式 */
     .menu-close {
-        position: absolute;
-        top: 15px;
-        right: 15px;
-        width: 30px;
-        height: 30px;
-        cursor: pointer;
-        z-index: 1006;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        background: transparent;
-        transition: background-color 0.3s ease;
-    }
-
-    .menu-close:hover {
-        background-color: rgba(230, 0, 18, 0.05);
-    }
-
-    .menu-close::before,
-    .menu-close::after {
-        content: '';
-        position: absolute;
-        width: 20px;
-        height: 2px;
-        background-color: #e60012;
-        transform-origin: center;
-        transition: background-color 0.3s ease;
-    }
-
-    .menu-close::before {
-        transform: rotate(45deg);
-    }
-
-    .menu-close::after {
-        transform: rotate(-45deg);
-    }
-
-    .menu-close:hover::before,
-    .menu-close:hover::after {
-        background-color: #ff1a1a;
+        display: none;
     }
 
     /* 選單項目樣式 */
@@ -461,19 +426,18 @@
     }
 
     .nav-item > a {
+        text-align: left;
+        padding: 15px 20px;
+        color: #333;
+        background: none;
+        border: none;
+        font-size: 16px;
+        font-weight: 500;
+        height: auto;
         display: flex;
         align-items: center;
-        padding: 12px 20px;
-        color: #333;
-        font-size: 15px;
-        font-weight: 500;
-        text-decoration: none;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-        border-right: none;
         justify-content: flex-start;
-        height: auto;
-        text-shadow: none;
-        background: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     }
 
     .nav-item > a:hover {
@@ -487,14 +451,14 @@
     .dropdown-menu {
         position: static;
         width: 100%;
-        background: #f8f8f8;
-        display: none;
-        box-shadow: none;
-        border-radius: 0;
         opacity: 1;
         visibility: visible;
         transform: none;
+        box-shadow: none;
+        background: #f8f8f8;
+        display: none;
         padding: 0;
+        border-radius: 0;
     }
 
     .dropdown-menu.active {
@@ -502,9 +466,9 @@
     }
 
     .dropdown-menu a {
-        padding: 10px 20px 10px 35px;
+        padding: 12px 20px 12px 35px;
+        font-size: 15px;
         color: #666;
-        font-size: 14px;
         border-bottom: 1px solid rgba(0, 0, 0, 0.03);
     }
 
@@ -749,11 +713,17 @@
 
     .nav-item > a {
         text-align: left;
-        padding: 12px 15px;
+        padding: 15px 20px;
         color: #333;
         background: none;
         border: none;
-        font-size: 15px;
+        font-size: 16px;
+        font-weight: 500;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     }
 
     .nav-item > a:hover {
@@ -803,6 +773,8 @@
         box-shadow: none;
         background: #f8f8f8;
         display: none;
+        padding: 0;
+        border-radius: 0;
     }
 
     .dropdown-menu.active {
@@ -810,13 +782,26 @@
     }
 
     .dropdown-menu a {
-        padding: 10px 20px 10px 35px;
-        font-size: 14px;
+        padding: 12px 20px 12px 35px;
+        font-size: 15px;
+        color: #666;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.03);
     }
 
+    .dropdown-menu a:hover {
+        color: #e60012;
+        background: rgba(230, 0, 18, 0.05);
+        padding-left: 40px;
+    }
+
+    /* Apple 產品特殊樣式 */
     .nav-item.apple > a {
         color: #fff;
         background: #e60012;
+    }
+
+    .nav-item.apple > a:hover {
+        background: #ff1a1a;
     }
 }
 
